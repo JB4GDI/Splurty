@@ -1,2 +1,4 @@
 class Quote < ActiveRecord::Base
+	# :presence => true makes the 
+	validates :saying, :presence => true, :length => { :maximum => 140, :minimum => 3 }
 end
